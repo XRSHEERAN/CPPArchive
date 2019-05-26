@@ -32,3 +32,11 @@ constexpr
 enum
 //avoid using #define for const
 ```
+
+```CPP
+//Array (replaced by vector)
+int arr[10]{1,2};
+int multi[2][2]{{}};
+```
+
+
