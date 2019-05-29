@@ -39,4 +39,9 @@ int arr[10]{1,2};
 int multi[2][2]{{}};
 ```
 
-
+```CPP
+//range based
+for(auto num : {1,2,3,4,5}){
+  cout<<num;
+  }
+```
