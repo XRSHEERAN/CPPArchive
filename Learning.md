@@ -45,3 +45,21 @@ for(auto num : {1,2,3,4,5}){
   cout<<num;
   }
 ```
+
+```CPP
+#include<cctype>
+char c;
+isalpha(c);//if a letter
+isalnum(c);//if a letter or digit
+//...
+```
+
+##### String
+a sequence of characters used in c style, called string literals. Strings are end by null
+```CPP
+#include<cstring>
+
+char my_name[]{"Sheeran"};//eight characters include null in the end
+char partial[4]='y';//fine, else are null
+strcpy(my_name,"Xianrun");//but no equal after initialization, no partial="newS";
+```
