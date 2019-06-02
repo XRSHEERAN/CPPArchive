@@ -76,3 +76,27 @@ strcpy(whole_name,first_name);
 strcat(whole_name,last_name);
 int whole_name_length=strlen(whole_name);
 ```
+#### String vs cString
+- dynamic sizing
+- also work with input with output streams
+- builtin functions
+
+```CPP
+#include<string>
+string s1;
+string s2{"Sheeran"};
+string s3 {s2};
+string s3{s2,2,2};//"22", start position and length of substring
+std::cout<<s2[0]<<s2.at(0);
+string s4=s2+"a";//ok
+string s5="a"+"B";//not okay as they are both cstyle strings
+for(char i : s)
+for(int i : s)//all represent characters
+//== != >= < <= can use on string  vs other strings
+s1.substr(0,2);//substring
+s2.find('s');//0
+s2.erase(0,5);//delete s
+s2.clear();//erase all
+getline(cin,s1);//get all until /n
+getline(cin,s1,'x');//get line until 'x'
+```
