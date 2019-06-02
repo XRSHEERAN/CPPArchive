@@ -63,3 +63,16 @@ char my_name[]{"Sheeran"};//eight characters include null in the end
 char partial[4]='y';//fine, else are null
 strcpy(my_name,"Xianrun");//but no equal after initialization, no partial="newS";
 ```
+```CPP
+#include <cstring>
+#include <cctype>
+char* first_name="Bjarne";
+char last_name[]{"Stroustrup"};
+char whole_name[strlen(first_name)+strlen(last_name)+1]{};
+    
+int first_name_length=strlen(first_name);
+int last_name_length=strlen(last_name);
+strcpy(whole_name,first_name);
+strcat(whole_name,last_name);
+int whole_name_length=strlen(whole_name);
+```
