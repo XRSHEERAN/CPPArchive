@@ -95,7 +95,7 @@ for(int i : s)//all represent characters
 //== != >= < <= can use on string  vs other strings
 s1.substr(0,2);//substring
 s2.find('s');//0
-s2.erase(0,5);//delete s
+s2.erase(0,5);//delete 5 characters from 0
 s2.clear();//erase all
 getline(cin,s1);//get all until /n
 getline(cin,s1,'x');//get line until 'x'
