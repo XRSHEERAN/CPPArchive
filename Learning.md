@@ -100,3 +100,7 @@ s2.clear();//erase all
 getline(cin,s1);//get all until /n
 getline(cin,s1,'x');//get line until 'x'
 ```
+
+```CPP
+int proto(int);//function prototype
+```
