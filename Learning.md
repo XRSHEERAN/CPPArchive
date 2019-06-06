@@ -103,4 +103,6 @@ getline(cin,s1,'x');//get line until 'x'
 
 ```CPP
 int proto(int);//function prototype
+int defaultProto(double rate=0.1);//prototype contains default definition
+
 ```
