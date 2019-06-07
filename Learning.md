@@ -104,5 +104,30 @@ getline(cin,s1,'x');//get line until 'x'
 ```CPP
 int proto(int);//function prototype
 int defaultProto(double rate=0.1);//prototype contains default definition
+int funcRef(int&);
+int funcRef(int &pass){
+}//can define in the function
+int funcV(const std::vector<int> &v){
+}//pass without having a copy and protect data in v
+//Without the reference symbol, c++ will always pass by value
+//inline insert the codes when executing instead of replacing which is suit for smaller functions
+inline in func(int a){
+  return 0;
+  }
+```
 
+#### Pointer
+A variable stores the address of memory
+```CPP
+int num{10};
+int* ptr{null};//this is pointer, p is it's value, &p is the address of p, all pointers have the same size
+ptr=&num;//points to the integer address
+*ptr=200;//deference and reassign value in the address
+//pointers allocate memory on heap
+ptr=new int;//allocate memory for another interger
+delete ptr;//must delete after using for safety
+//array are not pointers but they can use the same syntax
+ptr=new int[2];
+delete[] ptr;
+*(ptr+1)=ptr[0];
 ```
