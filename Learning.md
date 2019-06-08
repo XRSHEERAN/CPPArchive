@@ -143,6 +143,7 @@ int const* ptr{&num};//this pointer is constant and cannot point elsewhere
 #### Pass by Pointer
 Pass by pointer can be more convinient when manipulating array data and it can point to null.
 
+Reference is like a constant pointer that automatically deferences.
 ```CPP
 void fun(double* ptr){
 }
