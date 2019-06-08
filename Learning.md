@@ -130,4 +130,24 @@ delete ptr;//must delete after using for safety
 ptr=new int[2];
 delete[] ptr;
 *(ptr+1)=ptr[0];
+int* a, b;
+...
+int num=a-b;//this is the number of elements between the two numbers;
+
+//constant
+const int* ptr{&num};//the num is constant and cannot change
+ptr=&num2;//the pointer can still point to elsewhere
+int const* ptr{&num};//this pointer is constant and cannot point elsewhere
+```
+
+#### Pass by Pointer
+Pass by pointer can be more convinient when manipulating array data and it can point to null.
+
+```CPP
+void fun(double* ptr){
+}
+int* func(double a){
+int* ptr;
+return ptr;
+}
 ```
