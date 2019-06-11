@@ -152,3 +152,19 @@ int* ptr;
 return ptr;
 }
 ```
+#### Classes
+```CPP
+class my{
+  string s;
+  void insideFunc(){
+    std::cout<<"fuction Within";
+  }
+  void funcOut();
+}
+my::funcOut(){
+  cout<<"Function declared outside";
+}
+my somObj;//declare object
+my* ptr=new my();//a pointer to object
+delete ptr;
+```
