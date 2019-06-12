@@ -170,6 +170,7 @@ delete ptr;
 ptr->s;//access with ->
 ```
 #### Private can be accessed when implementing
+Default constructor will be provided only when there is no constructor defined
 ```CPP
 #include <iostream>
 #include <string>
@@ -179,11 +180,15 @@ class my{
   my(){
     s="Yes";
   }
+  //overload
+  my(string s){
+  }
   std::string str();
 };
 
 int main() {
   my test;
+  my param{"something"};
   std::cout << test.str();
 }
 std::string my::str(){
