@@ -167,4 +167,26 @@ my::funcOut(){
 my somObj;//declare object
 my* ptr=new my();//a pointer to object
 delete ptr;
+ptr->s;//access with ->
+```
+#### Private can be accessed when implementing
+```CPP
+#include <iostream>
+#include <string>
+class my{
+  std::string s;
+  public:
+  my(){
+    s="Yes";
+  }
+  std::string str();
+};
+
+int main() {
+  my test;
+  std::cout << test.str();
+}
+std::string my::str(){
+  return s;
+}
 ```
