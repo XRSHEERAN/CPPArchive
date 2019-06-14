@@ -195,3 +195,8 @@ std::string my::str(){
   return s;
 }
 ```
+
+#### Copy Constructor
+```CPP
+Player::Player(const Player& pt){};
+```
