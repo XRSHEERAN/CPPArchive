@@ -210,3 +210,11 @@ this->classMember
 #### Struct vs Class
 - Struct and Class are almost the same except class is private and struct is public by default.
 - Generally dont declare methods in struct
+
+#### Inheritance
+```CPP
+class superC{}
+class subC : public superC, private superC{};//private by default
+```
+Protected class members can be accessed in derived classes, but not objects.
+
