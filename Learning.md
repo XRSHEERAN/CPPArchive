@@ -216,5 +216,5 @@ this->classMember
 class superC{}
 class subC : public superC, private superC{};//private by default
 ```
-Protected class members can be accessed in derived classes, but not objects.
-
+- Protected class members can be accessed in derived classes, but not objects.
+- Derived class will call the base constructor first
