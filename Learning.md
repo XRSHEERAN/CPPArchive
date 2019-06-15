@@ -200,3 +200,13 @@ std::string my::str(){
 ```CPP
 Player::Player(const Player& pt){};
 ```
+
+#### This Operator
+A variable stores the current object
+```CPP
+this->classMember
+```
+
+#### Struct vs Class
+- Struct and Class are almost the same except class is private and struct is public by default.
+- Generally dont declare methods in struct
