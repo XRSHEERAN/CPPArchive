@@ -215,6 +215,19 @@ this->classMember
 ```CPP
 class superC{}
 class subC : public superC, private superC{};//private by default
+subC::subC(int x):superC{1},value(x){}
 ```
 - Protected class members can be accessed in derived classes, but not objects.
 - Derived class will call the base constructor first
+
+#### Redefine Base Methods
+class a{
+  void SuperFunc(){
+  }
+}
+class child : a{
+//inherit default private methods
+  void SuperFunc(){
+  //redefine
+  }
+}
