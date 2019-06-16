@@ -221,13 +221,32 @@ subC::subC(int x):superC{1},value(x){}
 - Derived class will call the base constructor first
 
 #### Redefine Base Methods
+```CPP
 class a{
-  void SuperFunc(){
+  virtual void SuperFunc(){
   }
+  final void myown(){};//this function cannot be deriveed
 }
+final class f{}//this class cannot be 
 class child : a{
 //inherit default private methods
-  void SuperFunc(){
+  virtual void SuperFunc(){
   //redefine
   }
+  
+
+a* ptr=new child();
+ptr->superFunc();//calls the child class function by run time binding virtual function, normal functions cannot
+```
+- Reference also binds dynamically
+
+```CPP
+//Pure Virtual Functions
+class abstractClass{
+  virtual purev()=0;//contains at least one such function
 }
+//if derived class doesn't override the pure virtual functions, then they are alsp abstract functions
+//abstract class can contain implementation, but not final
+//CPP doesn't have interface, use override and pure virtual instead
+//must have a virtual destructor if using a pointer to base class
+```
