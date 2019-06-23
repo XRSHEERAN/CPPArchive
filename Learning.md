@@ -250,3 +250,17 @@ class abstractClass{
 //CPP doesn't have interface, use override and pure virtual instead
 //must have a virtual destructor if using a pointer to base class
 ```
+
+#### STL
+
+```CPP
+std::sort(vec.begin(),vec.end());//use of functions and iterators
+std::reverse(vec.begin(),vec.end());//use of functions and iterators
+```
+Containers: sequential (vector, etc), associate and stacks...
+
+Template:
+```CPP
+template <typename T>
+T func(T a, T b){return a;}
+```
