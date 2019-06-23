@@ -257,10 +257,34 @@ class abstractClass{
 std::sort(vec.begin(),vec.end());//use of functions and iterators
 std::reverse(vec.begin(),vec.end());//use of functions and iterators
 ```
-Containers: sequential (vector, etc), associate and stacks...
+Containers: sequential (vector, etc), associate and stacks...; elements stored are copied by the container
 
-Template:
+Template/class, generic:
 ```CPP
-template <typename T>
+template <typename T>// or <class T>
 T func(T a, T b){return a;}
+template <typename T>
+class item{
+  T member;
+}
+```
+Iterator
+```CPP 
+for(auto it=vec.begin();it!=vec.end();++it){}
+```
+For Each
+```CPP
+struct fun{
+  int operator(int x){
+    return x*x;
+  }
+}
+fun f;
+int someFun(int a){return a*a;}
+//use fun
+std::for_each(vec.begin(),vec.end(),f);
+//use function
+std::for_each(vec.begin(),vec.end(),someFun);
+//Lambda function
+std::for_each(vec.begin(),vec.end(),[](int a){return a*a;});
 ```
