@@ -288,3 +288,7 @@ std::for_each(vec.begin(),vec.end(),someFun);
 //Lambda function
 std::for_each(vec.begin(),vec.end(),[](int a){return a*a;});
 ```
+
+List
+- Doubly linked nodes
+- constant removal time at each position
