@@ -292,3 +292,18 @@ std::for_each(vec.begin(),vec.end(),[](int a){return a*a;});
 List
 - Doubly linked nodes
 - constant removal time at each position
+```CPP
+std::list<int> l {1,2,3,4,5,6};
+```
+
+Set
+```CPP
+std::set<int> s {1,2,3,4,5,6,7};
+auto itr=s.find(1);//return an iterator
+if(itr!=s.end()){
+  s.erase(itr);
+}
+//check contains or not
+int i=s.count(element);//0 if not, 1 if exist
+
+```
